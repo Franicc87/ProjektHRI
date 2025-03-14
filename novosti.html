@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HAOK RIJEKA</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Ubuntu:wght@400;500;700&display=swap"
+        rel="stylesheet">
+    <link rel="icon" type="image/svg+xml" href="images/logo-1500.png">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <!-- Navigacija -->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="images/logo-1500.png" width="90" />
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <ul class="navbar-nav center-nav">
+                    <li class="nav-item px-3">
+                        <a class="nav-link" href="index.html">O NAMA</a>
+                    </li>
+                    <li class="nav-item px-3">
+                        <a class="nav-link" href="novosti.html">NOVOSTI</a>
+                    </li>
+                    <li class="nav-item px-3">
+                        <a class="nav-link" href="cijene.html">TRENERI</a>
+                    </li>
+
+                    <!-- Padajući izbornik za EKIPE -->
+                    <li class="nav-item dropdown px-3">
+                        <a class="nav-link dropdown-toggle" href="#" id="ekipeDropdown" role="button"
+                            aria-expanded="false">
+                            EKIPE
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="ekipeDropdown">
+                            <li><a class="dropdown-item" href="seniorke.html">Seniorke</a></li>
+                            <li><a class="dropdown-item" href="mladekategorije.html">Mlađe kategorije</a></li>
+                            <li><a class="dropdown-item" href="skolaodbojke.html">Škola odbojke</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item px-3">
+                        <a class="nav-link" href="cijene.html">SPONZORI</a>
+                    </li>
+                    <li class="nav-item px-3">
+                        <a class="nav-link" href="index.html">KONTAKT</a>
+                    </li>
+                </ul>
+
+                <!-- Društvene mreže -->
+                <ul class="navbar-nav ms-auto social-links">
+                    <li class="nav-item px-3">
+                        <a href="https://www.instagram.com" target="_blank">
+                            <ion-icon name="logo-instagram" size="large"></ion-icon>
+                        </a>
+                    </li>
+                    <li class="nav-item px-3">
+                        <a href="https://www.linkedin.com" target="_blank">
+                            <ion-icon name="logo-linkedin" size="large"></ion-icon>
+                        </a>
+                    </li>
+                    <li class="nav-item px-3">
+                        <a href="https://www.facebook.com" target="_blank">
+                            <ion-icon name="logo-facebook" size="large"></ion-icon>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid p-0">
+        <div class="hero-p d-flex align-items-end">
+            <div class="container text-white pb-3">
+                <div class="row">
+                    <div class="col-md-6 offset-md-1">
+                        <h1 class="text-white">NOVOSTI</h1>
+                        <p class="text-white">Najnovije vijesti iz našeg kluba! 🏐🔥</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!--Main layout-->
+    <div class="container mt-5">
+        <!--Section: News of the day-->
+        <section class="border-bottom pb-4 mb-5">
+            <div class="row gx-5">
+                <div class="col-md-6 mb-4">
+                    <div class="bg-image hover-overlay ripple shadow-2-strong rounded-5" data-mdb-ripple-color="light">
+                        <img src="https://mdbcdn.b-cdn.net/img/new/slides/080.webp" class="img-fluid" />
+                        <a href="#!">
+                            <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-md-6 mb-4">
+                    <span class="badge bg-danger px-2 py-1 shadow-1-strong mb-3">News of the day</span>
+                    <h4><strong>Facilis consequatur eligendi</strong></h4>
+                    <p class="text-muted">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis consequatur
+                        eligendi quisquam doloremque vero ex debitis veritatis placeat unde animi laborum
+                        sapiente illo possimus, commodi dignissimos obcaecati illum maiores corporis.
+                    </p>
+                    <button type="button" data-mdb-button-init data-mdb-ripple-init class="btn btn-primary">Read
+                        more</button>
+                </div>
+            </div>
+        </section>
+        <!--Section: News of the day-->
+
+        <!--Section: Content-->
+        <section>
+            <div class="row gx-lg-5">
+                <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
+                    <!-- News block -->
+                    <div>
+                        <!-- Featured image -->
+                        <div class="bg-image hover-overlay shadow-1-strong ripple rounded-5 mb-4"
+                            data-mdb-ripple-color="light">
+                            <img src="https://mdbcdn.b-cdn.net/img/new/fluid/city/113.webp" class="img-fluid" />
+                            <a href="#!">
+                                <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                            </a>
+                        </div>
+
+                        <!-- Article data -->
+                        <div class="row mb-3">
+                            <div class="col-6">
+                                <a href="" class="text-info">
+                                    <i class="fas fa-plane"></i>
+                                    Travels
+                                </a>
+                            </div>
+
+                            <div class="col-6 text-end">
+                                <u> 15.07.2020</u>
+                            </div>
+                        </div>
+
+                        <!-- Article title and description -->
+                        <a href="" class="text-dark">
+                            <h5>This is title of the news</h5>
+
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, iste aliquid. Sed
+                                id nihil magni, sint vero provident esse numquam perferendis ducimus dicta
+                                adipisci iusto nam temporibus modi animi laboriosam?
+                            </p>
+                        </a>
+
+                        <hr />
+
+                        <!-- News -->
+                        <a href="" class="text-dark">
+                            <div class="row mb-4 border-bottom pb-2">
+                                <div class="col-3">
+                                    <img src="https://mdbcdn.b-cdn.net/img/new/standard/city/041.webp"
+                                        class="img-fluid shadow-1-strong rounded" alt="Hollywood Sign on The Hill" />
+                                </div>
+
+                                <div class="col-9">
+                                    <p class="mb-2"><strong>Lorem ipsum dolor sit amet</strong></p>
+                                    <p>
+                                        <u> 15.07.2020</u>
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+
+                        <!-- News -->
+                        <a href="" class="text-dark">
+                            <div class="row mb-4 border-bottom pb-2">
+                                <div class="col-3">
+                                    <img src="https://mdbcdn.b-cdn.net/img/new/standard/city/042.webp"
+                                        class="img-fluid shadow-1-strong rounded" alt="Palm Springs Road" />
+                                </div>
+
+                                <div class="col-9">
+                                    <p class="mb-2"><strong>Lorem ipsum dolor sit amet</strong></p>
+                                    <p>
+                                        <u> 15.07.2020</u>
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+
+                        <!-- News -->
+                        <a href="" class="text-dark">
+                            <div class="row mb-4 border-bottom pb-2">
+                                <div class="col-3">
+                                    <img src="https://mdbcdn.b-cdn.net/img/new/standard/city/043.webp"
+                                        class="img-fluid shadow-1-strong rounded" alt="Los Angeles Skyscrapers" />
+                                </div>
+
+                                <div class="col-9">
+                                    <p class="mb-2"><strong>Lorem ipsum dolor sit amet</strong></p>
+                                    <p>
+                                        <u> 15.07.2020</u>
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+
+                        <!-- News -->
+                        <a href="" class="text-dark">
+                            <div class="row mb-4 border-bottom pb-2">
+                                <div class="col-3">
+                                    <img src="https://mdbcdn.b-cdn.net/img/new/standard/city/044.webp"
+                                        class="img-fluid shadow-1-strong rounded" alt="Skyscrapers" />
+                                </div>
+
+                                <div class="col-9">
+                                    <p class="mb-2"><strong>Lorem ipsum dolor sit amet</strong></p>
+                                    <p>
+                                        <u> 15.07.2020</u>
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- News block -->
+                </div>
+
+                <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+                    <!-- News block -->
+                    <div>
+                        <!-- Featured image -->
+                        <div class="bg-image hover-overlay shadow-1-strong rounded-5 ripple mb-4"
+                            data-mdb-ripple-color="light">
+                            <img src="https://mdbcdn.b-cdn.net/img/new/fluid/city/011.webp" class="img-fluid"
+                                alt="Brooklyn Bridge" />
+                            <a href="#!">
+                                <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                            </a>
+                        </div>
+
+                        <!-- Article data -->
+                        <div class="row mb-3">
+                            <div class="col-6">
+                                <a href="" class="text-danger">
+                                    <i class="fas fa-chart-pie"></i>
+                                    Business
+                                </a>
+                            </div>
+
+                            <div class="col-6 text-end">
+                                <u> 15.07.2020</u>
+                            </div>
+                        </div>
+
+                        <!-- Article title and description -->
+                        <a href="" class="text-dark">
+                            <h5>This is title of the news</h5>
+
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, iste aliquid. Sed
+                                id nihil magni, sint vero provident esse numquam perferendis ducimus dicta
+                                adipisci iusto nam temporibus modi animi laboriosam?
+                            </p>
+                        </a>
+
+                        <hr />
+
+                        <!-- News -->
+                        <a href="" class="text-dark">
+                            <div class="row mb-4 border-bottom pb-2">
+                                <div class="col-3">
+                                    <img src="https://mdbcdn.b-cdn.net/img/new/standard/city/031.webp"
+                                        class="img-fluid shadow-1-strong rounded" alt="Five Lands National Park" />
+                                </div>
+
+                                <div class="col-9">
+                                    <p class="mb-2"><strong>Lorem ipsum dolor sit amet</strong></p>
+                                    <p>
+                                        <u> 15.07.2020</u>
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+
+                        <!-- News -->
+                        <a href="" class="text-dark">
+                            <div class="row mb-4 border-bottom pb-2">
+                                <div class="col-3">
+                                    <img src="https://mdbcdn.b-cdn.net/img/new/standard/city/032.webp"
+                                        class="img-fluid shadow-1-strong rounded" alt="Paris - Eiffel Tower" />
+                                </div>
+
+                                <div class="col-9">
+                                    <p class="mb-2"><strong>Lorem ipsum dolor sit amet</strong></p>
+                                    <p>
+                                        <u> 15.07.2020</u>
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+
+                        <!-- News -->
+                        <a href="" class="text-dark">
+                            <div class="row mb-4 border-bottom pb-2">
+                                <div class="col-3">
+                                    <img src="https://mdbcdn.b-cdn.net/img/new/standard/city/033.webp"
+                                        class="img-fluid shadow-1-strong rounded" alt="Louvre" />
+                                </div>
+
+                                <div class="col-9">
+                                    <p class="mb-2"><strong>Lorem ipsum dolor sit amet</strong></p>
+                                    <p>
+                                        <u> 15.07.2020</u>
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+
+                        <!-- News -->
+                        <a href="" class="text-dark">
+                            <div class="row mb-4 border-bottom pb-2">
+                                <div class="col-3">
+                                    <img src="https://mdbcdn.b-cdn.net/img/new/standard/city/034.webp"
+                                        class="img-fluid shadow-1-strong rounded" alt="Times Square" />
+                                </div>
+
+                                <div class="col-9">
+                                    <p class="mb-2"><strong>Lorem ipsum dolor sit amet</strong></p>
+                                    <p>
+                                        <u> 15.07.2020</u>
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- News block -->
+                </div>
+
+                <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+                    <!-- News block -->
+                    <div>
+                        <!-- Featured image -->
+                        <div class="bg-image hover-overlay shadow-1-strong rounded-5 ripple mb-4"
+                            data-mdb-ripple-color="light">
+                            <img src="https://mdbcdn.b-cdn.net/img/new/fluid/city/018.webp" class="img-fluid"
+                                alt="Golden Gate National Recreation Area" />
+                            <a href="#!">
+                                <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                            </a>
+                        </div>
+
+                        <!-- Article data -->
+                        <div class="row mb-3">
+                            <div class="col-6">
+                                <a href="" class="text-warning">
+                                    <i class="fas fa-code"></i>
+                                    Technology
+                                </a>
+                            </div>
+
+                            <div class="col-6 text-end">
+                                <u> 15.07.2020</u>
+                            </div>
+                        </div>
+
+                        <!-- Article title and description -->
+                        <a href="" class="text-dark">
+                            <h5>This is title of the news</h5>
+
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, iste aliquid. Sed
+                                id nihil magni, sint vero provident esse numquam perferendis ducimus dicta
+                                adipisci iusto nam temporibus modi animi laboriosam?
+                            </p>
+                        </a>
+
+                        <hr />
+
+                        <!-- News -->
+                        <a href="" class="text-dark">
+                            <div class="row mb-4 border-bottom pb-2">
+                                <div class="col-3">
+                                    <img src="https://mdbcdn.b-cdn.net/img/new/standard/city/011.webp"
+                                        class="img-fluid shadow-1-strong rounded" alt="Brooklyn Bridge" />
+                                </div>
+
+                                <div class="col-9">
+                                    <p class="mb-2"><strong>Lorem ipsum dolor sit amet</strong></p>
+                                    <p>
+                                        <u> 15.07.2020</u>
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+
+                        <!-- News -->
+                        <a href="" class="text-dark">
+                            <div class="row mb-4 border-bottom pb-2">
+                                <div class="col-3">
+                                    <img src="https://mdbcdn.b-cdn.net/img/new/standard/city/012.webp"
+                                        class="img-fluid shadow-1-strong rounded" alt="Hamilton Park" />
+                                </div>
+
+                                <div class="col-9">
+                                    <p class="mb-2"><strong>Lorem ipsum dolor sit amet</strong></p>
+                                    <p>
+                                        <u> 15.07.2020</u>
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+
+                        <!-- News -->
+                        <a href="" class="text-dark">
+                            <div class="row mb-4 border-bottom pb-2">
+                                <div class="col-3">
+                                    <img src="https://mdbcdn.b-cdn.net/img/new/standard/city/013.webp"
+                                        class="img-fluid shadow-1-strong rounded"
+                                        alt="Perdana Botanical Garden Kuala Lumpur" />
+                                </div>
+
+                                <div class="col-9">
+                                    <p class="mb-2"><strong>Lorem ipsum dolor sit amet</strong></p>
+                                    <p>
+                                        <u> 15.07.2020</u>
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+
+                        <!-- News -->
+                        <a href="" class="text-dark">
+                            <div class="row mb-4 border-bottom pb-2">
+                                <div class="col-3">
+                                    <img src="https://mdbcdn.b-cdn.net/img/new/standard/city/014.webp"
+                                        class="img-fluid shadow-1-strong rounded" alt="Perdana Botanical Garden" />
+                                </div>
+
+                                <div class="col-9">
+                                    <p class="mb-2"><strong>Lorem ipsum dolor sit amet</strong></p>
+                                    <p>
+                                        <u> 15.07.2020</u>
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- News block -->
+                </div>
+            </div>
+        </section>
+        <!--Section: Content-->
+
+        <!-- Pagination -->
+        <nav class="my-4" aria-label="...">
+            <ul class="pagination pagination-circle justify-content-center">
+                <li class="page-item">
+                    <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
+                </li>
+                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                <li class="page-item active" aria-current="page">
+                    <a class="page-link" href="#">2 <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item">
+                    <a class="page-link" href="#">Next</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <!--Main layout-->
+
+
+    <section class="home-blog bg-sand">
+        <div class="container">
+            <!-- section title -->
+            <div class="row justify-content-md-center">
+                <div class="col-xl-5 col-lg-6 col-md-8">
+                    <div class="section-title text-center title-ex1">
+                        <h2>Latest News</h2>
+                        <p>Inventore cillum soluta inceptos eos platea, soluta class laoreet repellendus imperdiet
+                            optio.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- section title ends -->
+            <div class="row ">
+                <div class="col-md-6">
+                    <div class="media blog-media">
+                        <a href="blog-post-left-sidebar.html"><img class="d-flex"
+                                src="https://www.bootdey.com/image/350x380/6495ED/000000"
+                                alt="Generic placeholder image"></a>
+                        <div class="circle">
+                            <h5 class="day">14</h5>
+                            <span class="month">sep</span>
+                        </div>
+                        <div class="media-body">
+                            <a href="">
+                                <h5 class="mt-0">Standard Blog Post</h5>
+                            </a>
+                            Sodales aliquid, in eget ac cupidatat velit autem numquam ullam ducimus occaecati placeat
+                            error.
+                            <a href="blog-post-left-sidebar.html" class="post-link">Read More</a>
+                            <ul>
+                                <li>by: Admin</li>
+                                <li class="text-right"><a href="blog-post-left-sidebar.html">07 comments</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="media blog-media">
+                        <a href="blog-post-left-sidebar.html"><img class="d-flex"
+                                src="https://www.bootdey.com/image/350x380/FFB6C1/000000"
+                                alt="Generic placeholder image"></a>
+                        <div class="circle">
+                            <h5 class="day">12</h5>
+                            <span class="month">sep</span>
+                        </div>
+                        <div class="media-body">
+                            <a href="">
+                                <h5 class="mt-0">perferendis labore</h5>
+                            </a>
+                            Sodales aliquid, in eget ac cupidatat velit autem numquam ullam ducimus occaecati placeat
+                            error.
+                            <a href="blog-post-left-sidebar.html" class="post-link">Read More</a>
+                            <ul>
+                                <li>by: Admin</li>
+                                <li class="text-right"><a href="blog-post-left-sidebar.html">04 comments</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="media blog-media">
+                        <a href="blog-post-left-sidebar.html"><img class="d-flex"
+                                src="https://www.bootdey.com/image/350x380/FF7F50/000000"
+                                alt="Generic placeholder image"></a>
+                        <div class="circle">
+                            <h5 class="day">09</h5>
+                            <span class="month">sep</span>
+                        </div>
+                        <div class="media-body">
+                            <a href="">
+                                <h5 class="mt-0">deleniti incdunt magni</h5>
+                            </a>
+                            Sodales aliquid, in eget ac cupidatat velit autem numquam ullam ducimus occaecati placeat
+                            error.
+                            <a href="blog-post-left-sidebar.html" class="post-link">Read More</a>
+                            <ul>
+                                <li>by: Admin</li>
+                                <li class="text-right"><a href="blog-post-left-sidebar.html">10 comments</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="media blog-media">
+                        <a href="blog-post-left-sidebar.html"><img class="d-flex"
+                                src="https://www.bootdey.com/image/350x380/008B8B/000000"
+                                alt="Generic placeholder image"></a>
+                        <div class="circle">
+                            <h5 class="day">04</h5>
+                            <span class="month">sep</span>
+                        </div>
+                        <div class="media-body">
+                            <a href="">
+                                <h5 class="mt-0">Explicabo magnam </h5>
+                            </a>
+                            Sodales aliquid, in eget ac cupidatat velit autem numquam ullam ducimus occaecati placeat
+                            error.
+                            <a href="blog-post-left-sidebar.html" class="post-link">Read More</a>
+                            <ul>
+                                <li>by: Admin</li>
+                                <li class="text-right"><a href="blog-post-left-sidebar.html">06 comments</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-top">
+            <div class="container">
+                <div class="row gy-5">
+                    <div class="col-lg-3 col-sm-6">
+                        <a href="index.html"><img src="images/logo-1500.png" height="100"></a>
+                        <div class="line"></div>
+                        <p>Ponosno vozimo ulicama grada Rijeke od 2018. godine!</p>
+                        <div class="social-icons">
+                            <a href="https://www.instagram.com" target="_blank"><i></i>
+                                <ion-icon name="logo-instagram"></ion-icon>
+                            </a>
+                            <a href="https://www.linkedin.com" target="_blank"><i class="ri-instagram-fill"></i>
+                                <ion-icon name="logo-linkedin"></ion-icon>
+                            </a>
+                            <a href="https://www.facebook.com" target="_blank"><i class="ri-github-fill"></i>
+                                <ion-icon name="logo-facebook"></ion-icon>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6  "></div>
+                    <div class="col-lg-3 col-sm-6 ">
+                        <h5 class="mb-0 text-white">NAVIGACIJA</h5>
+                        <div class="line"></div>
+                        <ul>
+                            <li><a href="#o-nama" class="text-decoration-none">O nama</a></li>
+                            <li><a href="predavanja.html" class="text-decoration-none">Novosti</a></li>
+                            <li><a href="predavanja.html" class="text-decoration-none">Treneri</a></li>
+                            <li><a href="iv.html" class="text-decoration-none">Ekipe</a></li>
+                            <li><a href="iv.html" class="text-decoration-none">Sponzori</a></li>
+                            <li><a href="cijene.html" class="text-decoration-none">Kontakt</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 ">
+                        <h5 class="mb-0 text-white">KONTAKT</h5>
+                        <div class="line"></div>
+                        <ul>
+                            <li>Ulica Luke Franića 17</li>
+                            <li>51000 Rijeka</li>
+                            <li>+385 51 223 349</li>
+                            <li>+385 91 223 3490</li>
+                            <li>fiume.ured@fiume.hr</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="row g-4 justify-content-between">
+                    <div class="col-auto">
+                        <p class="mb-0">© Copyright Luka Franić. All Rights Reserved</p>
+                    </div>
+                    <div class="col-auto">
+                        <p class="mb-0">Designed By <a href="https://www.linkedin.com/in/lukafranic/" target="_blank"
+                                class="text-dark text-decoration-none">Luka
+                                Franić</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
